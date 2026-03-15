@@ -30,8 +30,9 @@
 ---
 
 ## 3. Kho khan gap phai
-- Can thong nhat ten file va commit message de de theo doi hon
-- Co mot so commit trung noi dung can sap xep ro rang hon trong cac tuan sau
+- Chua thong nhat hoan toan cac chuc nang chi tiet cua he thong
+- Can xac dinh ro moi lien he giua cac bang trong co so du lieu
+- Can sap xep lai mot so man hinh de phu hop voi vai tro nguoi dung
 
 ## 4. Ke hoach tuan 3
 - Tao CSDL MySQL

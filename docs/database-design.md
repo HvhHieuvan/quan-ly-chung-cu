@@ -1,97 +1,65 @@
-# Thiết kế cơ sở dữ liệu - Hệ thống quản lý chung cư
+# Thiet Ke Co So Du Lieu MySQL
 
-## 1. Mục tiêu
-Cơ sở dữ liệu phục vụ cho việc quản lý người dùng, căn hộ, cư dân, hóa đơn,
-phản ánh, thẻ xe và thông báo trong hệ thống quản lý chung cư.
-
-## 2. Danh sách bảng dự kiến
-1. roles
-2. users
-3. buildings
-4. apartments
-5. residents
-6. fee_types
-7. bills
-8. service_requests
-9. vehicle_cards
-10. notifications
-
-## 3. Mô tả các bảng
-
-### 3.1. roles
+## 1. Bang tai_khoan
 - id
-- name
+- ten_dang_nhap
+- mat_khau
+- vai_tro
+- trang_thai
 
-### 3.2. users
+## 2. Bang can_ho
 - id
-- username
-- password
-- full_name
-- email
-- phone
-- role_id
-- status
-- created_at
+- ma_can_ho
+- toa_nha
+- tang
+- dien_tich
+- trang_thai
 
-### 3.3. buildings
+## 3. Bang cu_dan
 - id
-- name
-- address
-- total_floors
+- ho_ten
+- ngay_sinh
+- gioi_tinh
+- so_dien_thoai
+- cccd
+- can_ho_id
 
-### 3.4. apartments
+## 4. Bang hop_dong
 - id
-- building_id
-- apartment_number
-- floor
-- area
-- status
+- cu_dan_id
+- can_ho_id
+- ngay_bat_dau
+- ngay_ket_thuc
+- trang_thai
 
-### 3.5. residents
+## 5. Bang hoa_don
 - id
-- user_id
-- apartment_id
-- identity_card
-- move_in_date
+- can_ho_id
+- thang
+- nam
+- tien_dien
+- tien_nuoc
+- phi_dich_vu
+- tong_tien
+- trang_thai
 
-### 3.6. fee_types
+## 6. Bang thanh_toan
 - id
-- name
-- price
-- description
+- hoa_don_id
+- ngay_thanh_toan
+- so_tien
+- phuong_thuc
 
-### 3.7. bills
+## 7. Bang phan_anh
 - id
-- apartment_id
-- fee_type_id
-- month
-- amount
-- due_date
-- payment_status
-- paid_at
-- created_by
+- cu_dan_id
+- noi_dung
+- ngay_gui
+- trang_thai
 
-### 3.8. service_requests
+## 8. Bang thong_bao
 - id
-- resident_id
-- title
-- content
-- status
-- response_content
-- created_at
-
-### 3.9. vehicle_cards
-- id
-- apartment_id
-- owner_name
-- vehicle_type
-- license_plate
-- status
-
-### 3.10. notifications
-- id
-- title
-- content
-- target_role
-- created_by
-- created_at
+- tieu_de
+- noi_dung
+- ngay_tao
+- nguoi_tao

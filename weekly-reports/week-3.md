@@ -35,7 +35,6 @@
 - Cau truc backend moi chi o muc khoi tao, chua trien khai code day du nen can them thoi gian de hoan thien
 
 ## 4. Ke hoach tuan 4
-- Tao project Spring Boot day du tren may
 - Dua file schema.sql va sample-data.sql vao backend de su dung
 - Xay dung Entity, Repository, Service, Controller
 - Bat dau code chuc nang dang nhap va phan quyen
